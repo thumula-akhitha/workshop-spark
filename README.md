@@ -4,7 +4,9 @@
 
 ### 1.  Akhitha Tumula
 <img src="GroupMembers/akhitha-picture.jpeg" alt="drawing" width="100"/>
+
 ### 2. SatishKumar Mandapalli
+
 ### 3. Sai Chandu Gampa
 <img src="GroupMembers/chandu.jpg" alt="drawing" width="100"/>
 
