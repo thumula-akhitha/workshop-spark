@@ -20,7 +20,7 @@
 
 ### 3.  Sai Chandu Gampa
 
-![image](https://github.com/thumula-akhitha/workshop-spark/blob/master/GroupMembers/WhatsApp Image 2020-03-17 at 12.15.03 AM.jpg_1.jpg)
+![image](GroupMembers/chandu.jpg)
 
 
 ## Profile Link
