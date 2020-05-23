@@ -5,5 +5,5 @@ Akhitha Tumula
 
 
 ## Profile Links 
-[AKhitha Tumula](https://github.com/thumula-akhitha)
+[Akhitha Tumula](https://github.com/thumula-akhitha)
 
