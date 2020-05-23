@@ -4,7 +4,7 @@
 
 1.  Akhitha Tumula
 
-![image](GroupMembers\akhitha-picture.jpeg)
+![image](https://github.com/thumula-akhitha/workshop-spark/blob/master/GroupMembers/akhitha-picture.jpeg)
 
 
 ## Profile Links 
