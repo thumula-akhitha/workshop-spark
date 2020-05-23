@@ -1,9 +1,13 @@
 # workshop-spark
-## Team Members 
-Akhitha Tumula
 
+## Team Members 
+
+1.  Akhitha Tumula
+
+![image](GroupMembers\akhitha-image.JPG)
 
 
 ## Profile Links 
-[Akhitha Tumula](https://github.com/thumula-akhitha)
+
+- [Akhitha Tumula](https://github.com/thumula-akhitha)
 
