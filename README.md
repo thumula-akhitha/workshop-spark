@@ -4,7 +4,7 @@
 
 1.  Akhitha Tumula
 
-![image](GroupMembers\akhitha-image.JPG)
+![image](GroupMembers\akhitha-picture.jpeg)
 
 
 ## Profile Links 
