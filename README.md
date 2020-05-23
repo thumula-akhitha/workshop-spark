@@ -11,3 +11,9 @@
 
 - [Akhitha Tumula](https://github.com/thumula-akhitha)
 
+2. Satishkumar Mandapalli
+
+
+## Profile Links
+- [Satishkumar Mandapalli](https://github.com/mandapallisatish64)
+
