@@ -104,6 +104,12 @@ Even though Scala is the native and more popular Spark language, many enterprise
 2. Open and create the Maven project
 3. Add jar files which was present in Spark folder to the maven project jar folder.
 4. Update POM.xml file with spark version
+<img src="Java/Screenshots/pom.png" alt="pom file" width="600"/>
+5.Write the code by importing requried modules.
+<img src="Java/Screenshots/code.png" alt="pom file" width="600"/>
+6.After running you will get results on output window.
+<img src="Java/Screenshots/output1.png" alt="pom file" width="600"/>
+<img src="Java/Screenshots/output2.png" alt="pom file" width="600"/>
 
 
 
