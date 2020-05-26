@@ -1,0 +1,17 @@
+// this code is to read the csv data
+from pyspark.sql import SQLContext
+sqlContext = SQLContext(sc)
+
+csvDF = sqlContext.read.format('com.databricks.spark.csv').options(header='true', inferschema='true').load('file:///C:/Users/s536887/Documents/emp.csv')
+// displays the schema of the csv data
+csvDF.printSchema()
+csvDF.show()
+
+// It displays the first name of all the employees
+csvDF.select("First Name").show()
+// It displays the salary of all the employees who are greater than 21
+csvDF.filter(csvDF['salary'] > 21).show()
+// It displays minimum salary of the employee
+csvDF.agg({"salary": "min"}).show()
+//This displays average salary of the employee
+csvDF.agg({"salary": "avg"}).show()

@@ -20,11 +20,11 @@
 **Apache Spark** is an open source cluster computing platform for real-time processing. This is one of the most popular projects of the Apache Software Foundation. Spark has clearly emerged as the industry leader in the production of Big Data.Today, Spark is being embraced by top names including Amazon , eBay, and Yahoo! Several companies are running Spark on clusters of thousands of nodes.It has a thriving open-source community and is the most active Apache project at the moment. Spark provides an interface for programming entire clusters with implicit data parallelism and fault-tolerance.
 - It was built on top of Hadoop MapReduce and it extends the MapReduce model to efficiently use more types of computations.
 ### Features of Apache Spark
-1. **Polyglot**:Spark offers high-level APIs for Java, Scala, Python and R. The Spark code can be written in any of these four languages. It's providing a shell for Scala and Python. The Scala shell can be accessed from the installed directory via ```./bin / spark-shell``` and Python shell via ```./bin / pyspark```.
-2. **Speed**:Spark is up to 100 times faster than Hadoop MapReduce for large-scale data processing. Spark is able to achieve this speed by means of controlled partitioning. It manages data using partitions that help to parallel distributed data processing with minimal network traffic.
-3. **Multiple Formats**:Spark supports various data types, such as Parquet, JSON, Hive and Cassandra, in addition to the standard formats such as text files, CSV and RDBMS tables. The Data Source API provides a pluggable mechanism for accessing structured data through Spark SQL. Data sources can be more than just simple pipes that convert data and convert it to Spark.
-4. **Lazy Evaluation**:Apache Spark is delaying its evaluation until it is absolutely necessary. This is one of the main factors that contributes to its size. For transformations, Spark adds them to the DAG (Directed Acyclic Graph) of the computation and only when the driver requests any data does the DAG actually get executed.
-5. **Real Time Computation**:Spark's computation is real-time and has low latency due to its in-memory computation. Spark is designed for massive scalability and the Spark team has recorded users of the framework operating production clusters with thousands of nodes and assisted a variety of computational models.
+1. **Polyglot**:Spark offers high-level APIs for Java, Scala, Python and R. The Spark code can be written in any of these four languages. It's providing a shell for Scala and Python. 
+2. **Speed**:Spark is up to 100 times faster than Hadoop MapReduce for large-scale data processing. Spark is able to achieve this speed by means of controlled partitioning. 
+3. **Multiple Formats**:Spark supports various data types, such as Parquet, JSON, Hive and Cassandra, in addition to the standard formats such as text files, CSV and RDBMS tables. 
+4. **Lazy Evaluation**:Apache Spark is delaying its evaluation until it is absolutely necessary. This is one of the main factors that contributes to its size. 
+5. **Real Time Computation**:Spark's computation is real-time and has low latency due to its in-memory computation.
 
 
 We are going to discuss Apache spark with three different programming languages Scala, Java and Python.
@@ -76,7 +76,7 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 
 
 ### Python
-Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python. 
+Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python.We can execute sql commands on any file type like json, csv, text, and more. The data retrieval process is faster in the apache spark sql.
 
 #### Prerequisties
 - Install spark and scala before downloading python
@@ -87,27 +87,49 @@ Spark SQL brings native support for SQL to Spark and streamlines the process of 
  
 ### SQL Queries peformed on JSON file
 
+1. Reading json file and performing sql queries on it.
+<img src="python/screenshots/json-example-1.png" alt="drawing" width="600"/>
+2. ```df.select("name").show() ```.This executes the select command in sql.
+We can use different sql queries in the python like GroupBy, filter, aggregrations
+commands:
+- It displays gender withafter performing groupBy action 
+```df.groupBy("gender").count().show() ```
+- It displays the age of the students who are equal to 23
+``` df.filter(df["age"]==23).show() ```
+- It displays the maximum salary of the student
+``` df.agg({"salary": "max"}).show()```
 
-
-
+<img src="python/screenshots/json-example-2.png" alt="drawing" width="600"/>
+<img src="python/screenshots/json-example-3.png" alt="drawing" width="600"/>
 
 
 ### SQL Queries performed on CSV file
 
+1. Reading csv file and performing sql queries on it.
 
+<img src="python/screenshots/csv-example-1.png" alt="drawing" width="600"/>
 
+2. Performing some sql commands on csv file.
 
+aggregrate commands :
+- It displays the firstName of the employees
+```csvDF.select("First Name").show()```
+- It displays whose salary is greater than 21 of the employees
+```csvDF.filter(csvDF['salary'] > 21).show()```
+- It displays the minimum salary of the employees
+```csvDF.agg({"salary": "min"}).show() ```
 
+other commands:
+```csvDF.groupBy("name").count().show() ```
 
+<img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
 
-
-
-
-
-
-
-
+<img src="python/screenshots/csv-example-3.png" alt="drawing" width="600"/>
 
 
 ## References
 1. https://spark.apache.org/docs/latest/quick-start.html
+
+2. https://spark.apache.org/docs/2.2.0/sql-programming-guide.html 
+
+3. https://www.youtube.com/watch?v=9mELEARcxJo

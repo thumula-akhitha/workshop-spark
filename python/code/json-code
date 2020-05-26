@@ -1,0 +1,31 @@
+
+// this code is to read the json data
+from pyspark.sql import SQLContext
+spark = SQLContext(sc)
+
+df = spark.read.json("file:///C:/Users/s536887/Documents/students.json")
+txt = sc.textFile("file:///C:/Users/s536887/Documents/students.json")
+# Displays the content of the DataFrame to stdout
+df.show()
+
+// It prints the total number of rows
+print(txt.count())
+
+// displays the schema of the json data
+df.printSchema()
+
+// displays all the names of the students
+
+df.select("name").show()
+
+// displays the students age who are equal to 23
+df.filter(df["age"]==23).show()
+
+// it groupby by the gender and displays it count
+df.groupBy("gender").count().show()
+
+// It only displays the gender, name of the students where age is incremented by 1
+df.select(df['gender'],df['name'],df['age']+1).show()
+
+//It displays the maximum of the salary
+df.agg({"salary": "max"}).show()
