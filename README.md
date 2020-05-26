@@ -29,7 +29,7 @@
 
 We are going to discuss Apache spark with three different programming languages Scala, Java and Python.
 
-### Scala
+## Scala
 Scala is a modern and multi-paradigm programming language. It has been designed for expressing general programming patterns in an elegant, precise, and type-safe way. One of the prime features is that it integrates the features of both object-oriented and functional languages smoothly.
 
 #### Prerequisites
@@ -75,8 +75,13 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 <img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
 
+<<<<<<< HEAD
 ### Python
 Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python.We can execute sql commands on any file type like json, csv, text, and more. The data retrieval process is faster in the apache spark sql.
+=======
+## Python
+Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python. 
+>>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
 
 #### Prerequisties
 - Install spark and scala before downloading python
@@ -111,6 +116,7 @@ commands:
 
 2. Performing some sql commands on csv file.
 
+<<<<<<< HEAD
 aggregrate commands :
 - It displays the firstName of the employees
 ```csvDF.select("First Name").show()```
@@ -121,6 +127,21 @@ aggregrate commands :
 
 other commands:
 ```csvDF.groupBy("name").count().show() ```
+=======
+## Java
+Even though Scala is the native and more popular Spark language, many enterprise-level projects are written in Java and so it is supported by the Spark stack with it’s own API.
+### Steps to work with java:
+1. Download eclipse from https://www.eclipse.org/downloads/
+2. Open and create the Maven project
+3. Add jar files which was present in Spark folder to the maven project jar folder.
+4. Update POM.xml file with spark version
+<img src="Java/Screenshots/pom.png" alt="pom file" width="600"/>
+5.Write the code by importing requried modules.
+<img src="Java/Screenshots/code.png" alt="pom file" width="600"/>
+6.After running you will get results on output window.
+<img src="Java/Screenshots/output1.png" alt="pom file" width="600"/>
+<img src="Java/Screenshots/output2.png" alt="pom file" width="600"/>
+>>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
 
 <img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
 
@@ -129,7 +150,12 @@ other commands:
 
 ## References
 1. https://spark.apache.org/docs/latest/quick-start.html
+<<<<<<< HEAD
 
 2. https://spark.apache.org/docs/2.2.0/sql-programming-guide.html 
 
 3. https://www.youtube.com/watch?v=9mELEARcxJo
+=======
+2. https://blog.matthewrathbone.com/2015/12/28/java-spark-tutorial.html
+3. https://www.edureka.co/blog/spark-java-tutorial/
+>>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
