@@ -88,10 +88,13 @@ Spark SQL brings native support for SQL to Spark and streamlines the process of 
 
 1. Reading json file and performing sql queries on it.
 <img src="python/screenshots/json-example-1.png" alt="drawing" width="600"/>
-2. ```df.select("name").show() ```.This executes the select command in sql.
+
+2. This command is same as the select command in sql. ``` df.select("name").show() ```
 We can use different sql queries in the python like GroupBy, filter, aggregrations
+
 commands:
-- It displays gender withafter performing groupBy action 
+
+- It displays gender with count after performing groupBy action 
 ```df.groupBy("gender").count().show() ```
 - It displays the age of the students who are equal to 23
 ``` df.filter(df["age"]==23).show() ```
@@ -112,20 +115,27 @@ commands:
 
 aggregrate commands :
 - It displays the firstName of the employees
+
 ```csvDF.select("First Name").show()```
+
 - It displays whose salary is greater than 21 of the employees
+
 ```csvDF.filter(csvDF['salary'] > 21).show()```
+
 - It displays the minimum salary of the employees
 ```csvDF.agg({"salary": "min"}).show() ```
 
 other commands:
+
 ```csvDF.groupBy("name").count().show() ```
+
 <img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
 
 <img src="python/screenshots/csv-example-3.png" alt="drawing" width="600"/>
 
 ## Java
 Even though Scala is the native and more popular Spark language, many enterprise-level projects are written in Java and so it is supported by the Spark stack with it’s own API.
+
 ### Steps to work with java:
 1. Download eclipse from https://www.eclipse.org/downloads/
 2. Open and create the Maven project
