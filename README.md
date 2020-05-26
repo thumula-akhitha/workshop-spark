@@ -97,7 +97,13 @@ Spark SQL brings native support for SQL to Spark and streamlines the process of 
 
 
 
-
+## Java
+Even though Scala is the native and more popular Spark language, many enterprise-level projects are written in Java and so it is supported by the Spark stack with it’s own API.
+### Steps to work with java:
+1. Download eclipse from https://www.eclipse.org/downloads/
+2. Open and create the Maven project
+3. Add jar files which was present in Spark folder to the maven project jar folder.
+4. Update POM.xml file with spark version
 
 
 
