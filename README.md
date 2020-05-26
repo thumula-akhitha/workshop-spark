@@ -29,6 +29,24 @@
 
 We are going to discuss Apache spark with three different programming languages Scala, Java and Python.
 
+### Scala
+Scala is a modern and multi-paradigm programming language. It has been designed for expressing general programming patterns in an elegant, precise, and type-safe way. One of the prime features is that it integrates the features of both object-oriented and functional languages smoothly.
+
+#### Prerequisites
+- To install spark click on this link 
+[Download Spark](https://spark.apache.org/downloads.html)
+- Download the spark file and unzip it using this command ```tar xzvf spark-2.4.5-bin-hadoop2.7.tgz```
+- You will get the folder in windows C and set the enivronment variables in system variables.
+
+### Basic commands in scala
+Open powershell from anywhere and run the command spark-shell it automatically opens the shell.
+
+
+### To find the Most Repeated Word count in a file using scala
+
+
+
+
 
 
 
