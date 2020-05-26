@@ -40,38 +40,39 @@ Scala is a modern and multi-paradigm programming language. It has been designed 
 
 ### Basic commands in scala
 Open powershell from anywhere and run the command spark-shell it automatically opens the shell.
-
-// This reads the content from the file
+1. This reads the content from the file
 ```val value = spark.read.textFile("input.txt")```
-// This displays how many lines are in the textFile
+2. This displays how many lines are in the textFile
 ```value.count()```
-//This displays the first line in the textFile
+3. This displays the first line in the textFile
 ```value.first()```
-// This displays the output that in how many lines "s" letter is present.
+4. This displays the output that in how many lines "s" letter is present.
 ```value.filter(line => line.contains("s")).count()```
-<img src="scala/Screenshots/basic-commands.png" alt="drawing" width="300"/>
+
+<img src="scala/Screenshots/basic-commands.png" alt="drawing" width="600"/>
 
 ### To find the Most Repeated Word count in a file using scala
 
-// This reads the information from the input.txt
+1. This reads the information from the input.txt
 ```val fileName = sc.textFile("input.txt")```
-//it splits the lines with spaces and displays the words which are more than 0
+2. It splits the lines with spaces and displays the words which are more than 0
 ```val wordLength = fileName.flatMap(line => line.spilt(" ")).filter(word => word.trim().length() > 0)```
-//This displays the output of the wordLength
+3. This displays the output of the wordLength
 ```wordLength.toDF().show()```
-//it appends the value 1 and it compares the key and value if the key is repeated then value is increased.
+4. It appends the value 1 and it compares the key and value if the key is repeated then value is increased.
 ```val reduceWord = wordLength.map(word=>(word,1)).reduceByKey((a,b) => a + b)```
-//This displays the output of the reduceWord
+5. This displays the output of the reduceWord
 ```reduceWord.toDF().show()```
-//This displays most repeated word in the file and its count.
+6. This displays most repeated word in the file and its count.
 ```val mostRepeatedWord = reduceWord.reduce((a,b) => if (a._2 > b._2) a else b)```
 
-<img src="scala/Screenshots/wordcount-1.png" alt="drawing" width="300"/>
+<img src="scala/Screenshots/wordcount-1.png" alt="drawing" width="600"/>
 
-<img src="scala/Screenshots/wordcount-2.png" alt="drawing" width="300"/>
+<img src="scala/Screenshots/wordcount-2.png" alt="drawing" width="600"/>
 
+7. Spark shell jobs:
 
-
+<img src="scala/Screenshots/web-Interface.png" alt="drawing" width="600"/>
 
 
 
@@ -87,3 +88,4 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 
 
 ## References
+1. https://spark.apache.org/docs/latest/quick-start.html
