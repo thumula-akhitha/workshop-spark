@@ -74,14 +74,8 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 
 <img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
-
-<<<<<<< HEAD
 ### Python
 Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python.We can execute sql commands on any file type like json, csv, text, and more. The data retrieval process is faster in the apache spark sql.
-=======
-## Python
-Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python. 
->>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
 
 #### Prerequisties
 - Install spark and scala before downloading python
@@ -116,7 +110,6 @@ commands:
 
 2. Performing some sql commands on csv file.
 
-<<<<<<< HEAD
 aggregrate commands :
 - It displays the firstName of the employees
 ```csvDF.select("First Name").show()```
@@ -127,7 +120,10 @@ aggregrate commands :
 
 other commands:
 ```csvDF.groupBy("name").count().show() ```
-=======
+<img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
+
+<img src="python/screenshots/csv-example-3.png" alt="drawing" width="600"/>
+
 ## Java
 Even though Scala is the native and more popular Spark language, many enterprise-level projects are written in Java and so it is supported by the Spark stack with it’s own API.
 ### Steps to work with java:
@@ -141,21 +137,11 @@ Even though Scala is the native and more popular Spark language, many enterprise
 6.After running you will get results on output window.
 <img src="Java/Screenshots/output1.png" alt="pom file" width="600"/>
 <img src="Java/Screenshots/output2.png" alt="pom file" width="600"/>
->>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
-
-<img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
-
-<img src="python/screenshots/csv-example-3.png" alt="drawing" width="600"/>
-
 
 ## References
 1. https://spark.apache.org/docs/latest/quick-start.html
-<<<<<<< HEAD
-
 2. https://spark.apache.org/docs/2.2.0/sql-programming-guide.html 
-
 3. https://www.youtube.com/watch?v=9mELEARcxJo
-=======
-2. https://blog.matthewrathbone.com/2015/12/28/java-spark-tutorial.html
-3. https://www.edureka.co/blog/spark-java-tutorial/
->>>>>>> a7c62452d4f6c1c23c8e173fba31b03ce522241e
+4. https://blog.matthewrathbone.com/2015/12/28/java-spark-tutorial.html
+5. https://www.edureka.co/blog/spark-java-tutorial/
+
