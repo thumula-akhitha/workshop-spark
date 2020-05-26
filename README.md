@@ -123,3 +123,5 @@ Even though Scala is the native and more popular Spark language, many enterprise
 
 ## References
 1. https://spark.apache.org/docs/latest/quick-start.html
+2. https://blog.matthewrathbone.com/2015/12/28/java-spark-tutorial.html
+3. https://www.edureka.co/blog/spark-java-tutorial/
