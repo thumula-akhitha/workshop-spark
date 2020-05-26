@@ -72,7 +72,7 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 
 7. Spark shell jobs:
 
-<img src="scala/Screenshots/web-Interface.png" alt="drawing" width="600"/>
+<img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
 
 
