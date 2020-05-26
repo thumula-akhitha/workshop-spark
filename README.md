@@ -75,6 +75,28 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 <img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
 
+### Python
+Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python. 
+
+#### Prerequisties
+- Install spark and scala before downloading python
+- Download anaconda python click on this link to follow the instructions
+ [https://docs.anaconda.com/anaconda/install/windows/](https://docs.anaconda.com/anaconda/install/windows/)
+- set the environment variables in system variables of python.
+
+ 
+### SQL Queries peformed on JSON file
+
+
+
+
+
+
+### SQL Queries performed on CSV file
+
+
+
+
 
 
 
