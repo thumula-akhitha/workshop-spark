@@ -1,0 +1,8 @@
+// This reads the content from the file
+val value = spark.read.textFile("input.txt")
+// This displays how many lines are in the textFile
+value.count()
+//This displays the first line in the textFile
+value.first()
+// This displays the output that in how many lines "s" letter is present.
+value.filter(line => line.contains("s")).count()
