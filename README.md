@@ -29,7 +29,7 @@
 
 We are going to discuss Apache spark with three different programming languages Scala, Java and Python.
 
-### Scala
+## Scala
 Scala is a modern and multi-paradigm programming language. It has been designed for expressing general programming patterns in an elegant, precise, and type-safe way. One of the prime features is that it integrates the features of both object-oriented and functional languages smoothly.
 
 #### Prerequisites
@@ -75,7 +75,7 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 <img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
 
-### Python
+## Python
 Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python. 
 
 #### Prerequisties
