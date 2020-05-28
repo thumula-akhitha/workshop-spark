@@ -39,9 +39,8 @@ Scala is a modern and multi-paradigm programming language. It has been designed 
 - You will get the folder in windows C and set the enivronment variables in system variables.
 
 Env Variables :
-```
 variable Name :SPARK_HOME 
-variable Value: C:\spark-2.4.5-bin-hadoop2.7 ```
+variable Value: C:\spark-2.4.5-bin-hadoop2.7 
 
 ### Basic commands in scala
 Open powershell from anywhere and run the command spark-shell it automatically opens the shell.
@@ -89,13 +88,13 @@ Spark SQL brings native support for SQL to Spark and streamlines the process of 
 - set the environment variables in system variables of python.
 
 Env variables :
-```
+
 1. variable name : PYSPARK_DRIVER_PYTHON 
 variable value : ipython
 
 2. variable name : PYSPARK_DRIVER_PYTHON_OPTS
 variable value : notebook
-```
+
  
 ### Using Python
 
