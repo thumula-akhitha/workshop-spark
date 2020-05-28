@@ -56,7 +56,7 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 1. This reads the information from the input.txt
 ```val fileName = sc.textFile("input.txt")```
 2. It splits the lines with spaces and displays the words which are more than 0
-```val wordLength = fileName.flatMap(line => line.spilt(" ")).filter(word => word.trim().length() > 0)```
+```val wordLength = fileName.flatMap(line => line.split(" ")).filter(word => word.trim().length() > 0)```
 3. This displays the output of the wordLength
 ```wordLength.toDF().show()```
 4. It appends the value 1 and it compares the key and value if the key is repeated then value is increased.
