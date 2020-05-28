@@ -38,6 +38,9 @@ Scala is a modern and multi-paradigm programming language. It has been designed 
 - Download the spark file and unzip it using this command ```tar xzvf spark-2.4.5-bin-hadoop2.7.tgz```
 - You will get the folder in windows C and set the enivronment variables in system variables.
 
+Env Variables :
+SPARK_HOME : C:\spark-2.4.5-bin-hadoop2.7
+
 ### Basic commands in scala
 Open powershell from anywhere and run the command spark-shell it automatically opens the shell.
 1. This reads the content from the file
@@ -74,7 +77,7 @@ Open powershell from anywhere and run the command spark-shell it automatically o
 
 <img src="scala/Screenshots/web-interface.png" alt="drawing" width="600"/>
 
-### Python
+### Apache Spark SQL
 Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark’s distributed datasets) and in external sources. To execute SQL queries we are doing with python.We can execute sql commands on any file type like json, csv, text, and more. The data retrieval process is faster in the apache spark sql.
 
 #### Prerequisties
@@ -83,7 +86,15 @@ Spark SQL brings native support for SQL to Spark and streamlines the process of 
  [https://docs.anaconda.com/anaconda/install/windows/](https://docs.anaconda.com/anaconda/install/windows/)
 - set the environment variables in system variables of python.
 
+Env variables :
+variable name : PYSPARK_DRIVER_PYTHON 
+variable value : ipython
+
+variable name : PYSPARK_DRIVER_PYTHON_OPTS
+variable value : notebook
  
+### Using Python
+
 ### SQL Queries peformed on JSON file
 
 1. Reading json file and performing sql queries on it.
@@ -132,6 +143,14 @@ other commands:
 <img src="python/screenshots/csv-example-2.png" alt="drawing" width="600"/>
 
 <img src="python/screenshots/csv-example-3.png" alt="drawing" width="600"/>
+
+## Using Scala
+
+- SQL queries performing on JSON file using scala
+
+<img src="python/screenshots/scala-1.png" alt="drawing" width="600"/>
+
+<img src="python/screenshots/scala-2.png" alt="drawing" width="600"/>
 
 ## Java
 Even though Scala is the native and more popular Spark language, many enterprise-level projects are written in Java and so it is supported by the Spark stack with it’s own API.
